@@ -20,7 +20,7 @@ function Project() {
     setActiveIndex(null);
   };
 
-  // ✅ Projects (image used for background removal project)
+  // ✅ Projects
   const projects = [
     {
       video: soccerVideo,
@@ -66,6 +66,10 @@ function Project() {
       <div className="projects-grid">
         {projects.map((proj, index) => (
           <div className="project" key={index}>
+            {/* Title on top */}
+            <h2 className="project-title">{proj.title}</h2>
+
+            {/* Video or Image */}
             {proj.isImage ? (
               <img
                 src={proj.video}
@@ -104,13 +108,14 @@ function Project() {
                 }
               />
             )}
-            <h2>{proj.title}</h2>
+
+            {/* Description */}
             <p>{proj.desc}</p>
           </div>
         ))}
       </div>
 
-      {/* Modal overlay (supports both video and image) */}
+      {/* Modal (for full view) */}
       {activeIndex !== null && (
         <div className="video-modal" onClick={closeModal}>
           {projects[activeIndex].isImage ? (
