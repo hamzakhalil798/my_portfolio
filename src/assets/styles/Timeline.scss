@@ -1,0 +1,98 @@
+/* ================================
+   🎯 TIMELINE BASE STYLING
+================================ */
+
+.vertical-timeline span {
+  color: white;
+  font-family: "Courier Prime", monospace;
+}
+
+.vertical-timeline p,
+.vertical-timeline-element p,
+.vertical-timeline-element h3,
+.vertical-timeline-element h4,
+.vertical-timeline-element span {
+  color: rgb(39, 40, 34);
+}
+
+.vertical-timeline-element .vertical-timeline-element-date {
+  color: white;
+}
+
+.svg-inline--fa {
+  color: white;
+}
+
+/* Responsive color fix for smaller screens */
+@media screen and (max-width: 1170px) {
+  .vertical-timeline-element .vertical-timeline-element-date {
+    color: rgb(39, 40, 34);
+  }
+}
+
+/* ================================
+   ✨ LOGO HOVER ANIMATION
+================================ */
+
+.timeline-logo {
+  width: 150%;
+  height: 150%;
+  border-radius: 50%;
+  object-fit: contain;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.3);
+    box-shadow: 0 0 15px rgba(80, 0, 202, 0.4);
+  }
+}
+
+/* ================================
+   🧩 CARD HOVER EFFECTS
+================================ */
+
+.vertical-timeline-element--work,
+.vertical-timeline-element--education {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.vertical-timeline-element--work:hover,
+.vertical-timeline-element--education:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* ================================
+   🕶️ TITLE STYLING
+================================ */
+
+.items-container h1 {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: #5000ca;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+/* ================================
+   💡 OPTIONAL: GLOW ANIMATION FOR DOTS
+================================ */
+
+.vertical-timeline-element-icon {
+  animation: pulseGlow 2.5s infinite ease-in-out;
+}
+
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 0px rgba(80, 0, 202, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 15px rgba(80, 0, 202, 0.4);
+  }
+  100% {
+    box-shadow: 0 0 0px rgba(80, 0, 202, 0.2);
+  }
+}
+
