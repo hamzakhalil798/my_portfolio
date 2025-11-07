@@ -8,7 +8,7 @@ function Contact() {
         <div className="contact_wrapper">
           <h1>Contact</h1>
           <p>
-            Feel free to reach out for collaborations or project discussions:
+            Are you in need of a high-performance and intuitive AI system to enhance your product or business? Seeking expert consultation or have burning questions about AI technology? Or simply want to connect and say "Hi 👋"? Whatever your needs, don't hesitate to reach out. I'm here to assist you every step of the way. Feel free to drop me an email for the fastest response. Let's bring your AI vision to life!
           </p>
           <h2>
             <a href="mailto:khalilhamza798@gmail.com" className="email-link">
