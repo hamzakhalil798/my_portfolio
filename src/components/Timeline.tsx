@@ -31,7 +31,7 @@ function Timeline() {
           >
             <h3 className="vertical-timeline-element-title">AI Consultant</h3>
             <h4 className="vertical-timeline-element-subtitle">
-              Ultimus (Part-Time, Remote, US-based)
+              Ultimus (Remote, US-based)
             </h4>
             <p>
               Building RAG-based chatbots using LangChain and n8n. Designing automation workflows
@@ -75,7 +75,7 @@ function Timeline() {
             icon={<img src={esperLogo} alt="Esper Solutions" className="timeline-logo" />}
           >
             <h3 className="vertical-timeline-element-title">Machine Learning Engineer</h3>
-            <h4 className="vertical-timeline-element-subtitle">Esper Solutions — Remote</h4>
+            <h4 className="vertical-timeline-element-subtitle">Esper Solutions</h4>
             <p>
               Conducting research, fine-tuning models, and developing/deploying scalable AI
               applications using Flask and FastAPI.
